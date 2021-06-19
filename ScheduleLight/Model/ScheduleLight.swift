@@ -8,13 +8,13 @@
 import Foundation
 
 struct ScheduleLight: Hashable, Codable, Identifiable {
-    var id: Int
-    var name: String
-    var room: String
-    var start_time: String
-    var end_time: String
-    var description: String
-    var announcement: String
-    var document: String
-    var zoomurl: String
+    let id: Int
+    let name: String
+    let room: String
+    let startTime: String
+    let endTime: String
+    let description: String
+    let announcement: String
+    let document: String
+    let zoomurl: String
 }

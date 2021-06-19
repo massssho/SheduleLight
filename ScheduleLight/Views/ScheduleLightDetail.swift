@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct SchduleLightDetail: View {
-    var scheduleLight: ScheduleLight
+    let scheduleLight: ScheduleLight
     
     var body: some View {
         List {
             HStack {
+                Rectangle()
+                    .stroke(lineWidth: 4)
+                    .fill(Color(red: 0.0, green: 0.9, blue: 0.85, opacity: 1.0))
+                    .frame(width: 1)
                 VStack(alignment: .leading, spacing: 8) {
                     Text("アナウンスメント")
                         .font(.callout)
@@ -24,6 +28,10 @@ struct SchduleLightDetail: View {
             }
             
             HStack {
+                Rectangle()
+                    .stroke(lineWidth: 4)
+                    .fill(Color(red: 0.0, green: 0.9, blue: 0.85, opacity: 1.0))
+                    .frame(width: 1)
                 VStack(alignment: .leading, spacing: 8) {
                     Text("講義スライド")
                         .font(.callout)
@@ -35,6 +43,10 @@ struct SchduleLightDetail: View {
             }
             
             HStack {
+                Rectangle()
+                    .stroke(lineWidth: 4)
+                    .fill(Color(red: 0.0, green: 0.9, blue: 0.85, opacity: 1.0))
+                    .frame(width: 1)
                 VStack(alignment: .leading, spacing: 8) {
                     Text("zoom録画")
                         .font(.callout)

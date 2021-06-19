@@ -14,6 +14,7 @@ func load<T: Decodable>(_ filename: String) -> T {
     do {
         let data = try Data(contentsOf: fileUrl)
         let jsonDecoder = JSONDecoder()
+        jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
         
         return try jsonDecoder.decode(T.self, from: data)
     } catch {

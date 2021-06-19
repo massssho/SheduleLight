@@ -12,28 +12,28 @@ struct ScheduleLightRow: View {
     
     
     var body: some View {
-        HStack {
-            VStack(alignment: .leading, spacing: 20) {
-                Text(scheduleLight.start_time)
-                    .font(.footnote)
-                Text(scheduleLight.end_time)
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-            }
-            .offset(y: 1)
-            VStack(alignment: .leading, spacing: 18) {
-                Text(scheduleLight.name)
-                    .font(.callout)
-                Text(scheduleLight.description)
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-            }
-            Spacer()
-            Text(scheduleLight.room)
-                .font(.subheadline)
-                .foregroundColor(Color(red: 0.0, green: 0.9, blue: 0.85, opacity: 1.0))
-        }
-        .padding()
+                HStack {
+                    VStack(alignment: .leading, spacing: 20) {
+                        Text(scheduleLight.startTime)
+                            .font(.footnote)
+                        Text(scheduleLight.endTime)
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                    }
+                    .offset(y: 1)
+                    VStack(alignment: .leading, spacing: 18) {
+                        Text(scheduleLight.name)
+                            .font(.callout)
+                        Text(scheduleLight.description)
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                    }
+                    Spacer()
+                    Text(scheduleLight.room)
+                        .font(.subheadline)
+                        .foregroundColor(Color(red: 0.0, green: 0.9, blue: 0.85, opacity: 1.0))
+                }
+                .padding()
     }
 }
 
