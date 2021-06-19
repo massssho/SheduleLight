@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52C093F0265ABFFD005310AE /* ScheduleLightList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C093EF265ABFFD005310AE /* ScheduleLightList.swift */; };
+		52C093F2265AC7CC005310AE /* ScheduleLightDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C093F1265AC7CC005310AE /* ScheduleLightDetail.swift */; };
 		52C93284265A407F0062A27F /* ScheduleLightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C93283265A407F0062A27F /* ScheduleLightApp.swift */; };
 		52C93286265A407F0062A27F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C93285265A407F0062A27F /* ContentView.swift */; };
 		52C93288265A40810062A27F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C93287265A40810062A27F /* Assets.xcassets */; };
 		52C9328B265A40810062A27F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C9328A265A40810062A27F /* Preview Assets.xcassets */; };
+		52C93293265A5A590062A27F /* ScheduleLightData.json in Resources */ = {isa = PBXBuildFile; fileRef = 52C93292265A5A590062A27F /* ScheduleLightData.json */; };
+		52C93295265A86B70062A27F /* ScheduleLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C93294265A86B60062A27F /* ScheduleLight.swift */; };
+		52C93297265A93420062A27F /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C93296265A93420062A27F /* ModelData.swift */; };
+		52C9329C265A9F270062A27F /* ScheduleLightRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9329B265A9F270062A27F /* ScheduleLightRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52C093EF265ABFFD005310AE /* ScheduleLightList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleLightList.swift; sourceTree = "<group>"; };
+		52C093F1265AC7CC005310AE /* ScheduleLightDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleLightDetail.swift; sourceTree = "<group>"; };
 		52C93280265A407F0062A27F /* ScheduleLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScheduleLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C93283265A407F0062A27F /* ScheduleLightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleLightApp.swift; sourceTree = "<group>"; };
 		52C93285265A407F0062A27F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		52C93287265A40810062A27F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52C9328A265A40810062A27F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		52C9328C265A40810062A27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C93292265A5A590062A27F /* ScheduleLightData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ScheduleLightData.json; sourceTree = "<group>"; };
+		52C93294265A86B60062A27F /* ScheduleLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleLight.swift; sourceTree = "<group>"; };
+		52C93296265A93420062A27F /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		52C9329B265A9F270062A27F /* ScheduleLightRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleLightRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +65,10 @@
 			isa = PBXGroup;
 			children = (
 				52C93283265A407F0062A27F /* ScheduleLightApp.swift */,
-				52C93285265A407F0062A27F /* ContentView.swift */,
+				52C9329A265A9E890062A27F /* Resources */,
+				52C93299265A9E710062A27F /* Model */,
 				52C93287265A40810062A27F /* Assets.xcassets */,
+				52C93298265A9E540062A27F /* Views */,
 				52C9328C265A40810062A27F /* Info.plist */,
 				52C93289265A40810062A27F /* Preview Content */,
 			);
@@ -67,6 +81,34 @@
 				52C9328A265A40810062A27F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52C93298265A9E540062A27F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52C93285265A407F0062A27F /* ContentView.swift */,
+				52C9329B265A9F270062A27F /* ScheduleLightRow.swift */,
+				52C093EF265ABFFD005310AE /* ScheduleLightList.swift */,
+				52C093F1265AC7CC005310AE /* ScheduleLightDetail.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		52C93299265A9E710062A27F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52C93296265A93420062A27F /* ModelData.swift */,
+				52C93294265A86B60062A27F /* ScheduleLight.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52C9329A265A9E890062A27F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52C93292265A5A590062A27F /* ScheduleLightData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C93293265A5A590062A27F /* ScheduleLightData.json in Resources */,
 				52C9328B265A40810062A27F /* Preview Assets.xcassets in Resources */,
 				52C93288265A40810062A27F /* Assets.xcassets in Resources */,
 			);
@@ -138,8 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C9329C265A9F270062A27F /* ScheduleLightRow.swift in Sources */,
+				52C093F2265AC7CC005310AE /* ScheduleLightDetail.swift in Sources */,
+				52C93295265A86B70062A27F /* ScheduleLight.swift in Sources */,
+				52C93297265A93420062A27F /* ModelData.swift in Sources */,
 				52C93286265A407F0062A27F /* ContentView.swift in Sources */,
 				52C93284265A407F0062A27F /* ScheduleLightApp.swift in Sources */,
+				52C093F0265ABFFD005310AE /* ScheduleLightList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

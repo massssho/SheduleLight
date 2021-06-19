@@ -1,0 +1,35 @@
+[
+    {
+        "name": "力学1",
+        "id": 1001,
+        "room": "W222",
+        "start_time": "09:00",
+        "end_time": "10:30",
+        "description": "Week 1 Description",
+        "announcement": "フォーラム",
+        "document": "ファイル",
+        "zoomurl": "URL"
+    },
+    {
+        "name": "電磁気学2",
+        "id": 1002,
+        "room": "W222",
+        "start_time": "09:00",
+        "end_time": "10:30",
+        "description": "Week 2 Description",
+        "announcement": "フォーラム",
+        "document": "ファイル",
+        "zoomurl": "URL"
+    },
+    {
+        "name": "化学3",
+        "id": 1003,
+        "room": "W222",
+        "start_time": "16:15",
+        "end_time": "17:55",
+        "description": "Week 3 Description",
+        "announcement": "フォーラム",
+        "document": "ファイル",
+        "zoomurl": "URL"
+    }
+]

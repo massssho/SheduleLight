@@ -11,7 +11,7 @@ import SwiftUI
 struct ScheduleLightApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ScheduleLightList()
         }
     }
 }
